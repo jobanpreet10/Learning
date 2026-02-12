@@ -1,0 +1,5 @@
+payment_type,is_digital
+CARD,Y
+UPI,Y
+NETBANKING,Y
+COD,N

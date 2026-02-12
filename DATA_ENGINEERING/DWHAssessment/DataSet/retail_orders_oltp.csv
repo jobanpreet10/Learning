@@ -1,0 +1,65 @@
+order_id,order_timestamp,order_status,
+customer_id,customer_name,customer_email,customer_phone,customer_city,customer_state,
+product_id,product_name,product_category,
+store_id,store_city,store_state,store_region,
+quantity,unit_price,discount_amount,payment_type,
+record_created_at,record_updated_at
+
+O1001,2023-06-01 10:15:00,COMPLETED,
+C001,Rahul Sharma,rahul.sharma@gmail.com,9876543210,Mumbai,MH,
+P101,iPhone 14,Electronics,
+S01,Mumbai,MH,West,
+1,70000,2000,CARD,
+2023-06-01 10:15:05,2023-06-01 10:15:05
+
+O1002,2023-06-01 10:45:00,COMPLETED,
+C001,Rahul Sharma,rahul.sharma@gmail.com,9876543210,Mumbai,MH,
+P102,AirPods,Electronics,
+S01,Mumbai,MH,West,
+2,15000,0,UPI,
+2023-06-01 10:45:03,2023-06-01 10:45:03
+
+O1003,2023-06-02 11:30:00,CANCELLED,
+C002,Anita Mehta,anita.mehta@yahoo.com,9123456789,Bangalore,KA,
+P103,Office Chair,Furniture,
+S02,Bangalore,KA,South,
+1,12000,1000,CARD,
+2023-06-02 11:30:02,2023-06-02 11:30:02
+
+O1004,2023-06-03 09:20:00,COMPLETED,
+C003,John Dsouza,john.ds@gmail.com,9988776655,Delhi,DL,
+P104,Running Shoes,Fashion,
+S03,Delhi,DL,North,
+1,5000,500,NETBANKING,
+2023-06-03 09:20:04,2023-06-03 09:20:04
+
+O1005,2023-06-03 21:10:00,FAILED,
+C002,Anita Mehta,anita.mehta@yahoo.com,9123456789,Bangalore,KA,
+P101,iPhone 14,Electronics,
+S02,Bangalore,KA,South,
+1,70000,0,CARD,
+2023-06-03 21:10:01,2023-06-03 21:10:01
+
+-- Customer email change (SCD trigger)
+O1006,2023-06-04 08:05:00,COMPLETED,
+C001,Rahul Sharma,rahul.new@gmail.com,9876543210,Pune,MH,
+P105,Study Table,Furniture,
+S04,Pune,MH,West,
+1,18000,2000,UPI,
+2023-06-04 08:05:03,2023-06-04 08:05:03
+
+-- Late arriving record
+O1007,2023-05-28 19:30:00,COMPLETED,
+C004,Priya Iyer,priya.iyer@gmail.com,9001122334,Chennai,TN,
+P106,Smart Watch,Electronics,
+S05,Chennai,TN,South,
+1,22000,1000,CARD,
+2023-06-05 09:00:00,2023-06-05 09:00:00
+
+-- Duplicate order_id (DQ issue)
+O1004,2023-06-03 09:20:00,COMPLETED,
+C003,John Dsouza,john.ds@gmail.com,9988776655,Delhi,DL,
+P104,Running Shoes,Fashion,
+S03,Delhi,DL,North,
+1,5000,500,NETBANKING,
+2023-06-03 09:20:04,2023-06-03 10:00:00
