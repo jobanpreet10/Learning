@@ -1,0 +1,11 @@
+order_id,customer_id,order_date,category,product,price,quantity,region,status
+101,1,01-01-2026,Electronics,Laptop,55000,1,South,Delivered
+102,2,02-01-2026,Electronics,Mouse,1200,2,North,Delivered
+103,3,03-01-2026,Furniture,Chair,3000,1,East,Delivered
+104,1,04-01-2026,Electronics,Mobile,20000,1,South,Pending
+105,4,05-01-2026,Furniture,Table,8000,1,West,Delivered
+106,2,06-01-2026,Electronics,Headphone,2000,3,North,Delivered
+107,5,07-01-2026,Electronics,Laptop,54000,1,East,Delivered
+108,3,08-01-2026,Furniture,Sofa,25000,1,South,Cancelled
+109,4,09-01-2026,Electronics,Tablet,18000,2,West,Delivered
+110,1,10-01-2026,Electronics,Mouse,1200,1,South,Delivered

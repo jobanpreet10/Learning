@@ -1,0 +1,18 @@
+2026-02-10 11:20:06,580 | my_app | INFO | Application started
+2026-02-10 11:20:06,581 | my_app | DEBUG | divide() called with a=10, b=2
+2026-02-10 11:20:06,582 | my_app | INFO | Division successful: 5.0
+2026-02-10 11:20:06,582 | my_app | DEBUG | divide() called with a=10, b=0
+2026-02-10 11:20:06,582 | my_app | ERROR | Attempted division by zero
+Traceback (most recent call last):
+  File "/var/folders/yv/l1f0gtyn1rx2zvg5mc2dy_h40000gp/T/ipykernel_95924/2715587501.py", line 7, in divide
+    result = a / b
+             ~~^~~
+ZeroDivisionError: division by zero
+2026-02-10 11:20:06,582 | my_app | INFO | BankAccount created for Gopal with balance 1000
+2026-02-10 11:20:06,583 | my_app | DEBUG | Deposit called with amount=500
+2026-02-10 11:20:06,583 | my_app | INFO | Deposited 500. New balance: 1500
+2026-02-10 11:20:06,583 | my_app | DEBUG | Withdraw called with amount=2000
+2026-02-10 11:20:06,583 | my_app | ERROR | Insufficient funds: balance=1500, requested=2000
+2026-02-10 11:20:06,584 | my_app | DEBUG | Withdraw called with amount=300
+2026-02-10 11:20:06,584 | my_app | INFO | Withdrawn 300. New balance: 1200
+2026-02-10 11:20:06,584 | my_app | CRITICAL | Application finished with critical example

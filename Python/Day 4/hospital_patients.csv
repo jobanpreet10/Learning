@@ -1,0 +1,2 @@
+PatientID,Name,Age,Symptom,Department,Doctor,Medicines,Lab_Report,Lab_Status,Total_Bill_INR
+4452,JObanb,23,fever,General,Dr. Sharma,"Azithromycin, Vitamin C","Sugar:101mg/dL, Hb:11.3g/dL",Normal,1170

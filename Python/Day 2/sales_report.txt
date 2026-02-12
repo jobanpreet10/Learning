@@ -1,0 +1,4 @@
+Max Sales :1000
+Min sales is :100
+Avg sales is :550.0
+total  sales is :1100
