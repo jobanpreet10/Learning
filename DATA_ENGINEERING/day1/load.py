@@ -1,5 +1,7 @@
+import os
 
 def load_data(df):
-    df.to_csv("output.csv", index = False)
-    print("Data uploaded to output.csv")
-    
+    path = os.path.join(os.path.dirname(__file__), "output.csv")
+    df.to_csv(path, index=False)
+
+    print("Data uploaded to", path)
